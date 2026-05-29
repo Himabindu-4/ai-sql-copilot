@@ -1,4 +1,4 @@
-AI SQL Copilot
+~~~ AI SQL Copilot
 Ask Questions in Plain English. Get SQL, Charts, and Business Insights Instantly.
 Transform natural language into SQL queries, execute them securely on PostgreSQL, visualize results, and generate AI-powered insights — all from a modern analytics dashboard.
 
@@ -126,53 +126,65 @@ D. Visualization
 - Dynamic Chart Builder
 
 Clone Repository:
+
 * https://github.com/Himabindu-4/ai-sql-copilot.git
 Install Dependencies:
 - npm install
+  
 Configure Environment:
+
 - Start Development Server
   npm run dev  
 - Open:
   http://localhost:3000
 
-Example Queries
+Example Queries:
+
 > Sales Analytics
+
 * Show total sales by customer
 * Revenue by region
 * Sales over time
   
 > Customer Analytics:
+
 * Customer-wise order counts
 * Which customer spent the most?
   
-> Product Analytics: 
+> Product Analytics:
+
 * Top selling products
 * Best selling product
 * Low stock products
   
 > Order Analytics example:
+
 * Count total orders
 * Show average order amount
   
 Security Features:
-✅ Blocks
+
+1. Blocks
    * DROP
    * DELETE
    * UPDATE
    * ALTER
    * TRUNCATE
    * INSERT
-✅ Read-only analytics
-✅ Safe query execution
-✅ Result limits
+
+2.Read-only analytics
+3.Safe query execution
+4.Result limits
 
 Future Enhancements:
+
 - Team Collaboration
 - Scheduled Reports
 - Multi-Tenant Workspaces
 - Natural Language Dashboard Creation
   
 Project Highlights:
+
 ✔ Natural Language to SQL
 ✔ PostgreSQL Analytics Engine
 ✔ Interactive Visualizations
