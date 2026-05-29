@@ -126,13 +126,11 @@ D. Visualization
 - Dynamic Chart Builder
 
 Clone Repository:
-
 * https://github.com/Himabindu-4/ai-sql-copilot.git
 Install Dependencies:
 - npm install
   
 Configure Environment:
-
 - Start Development Server
   npm run dev  
 - Open:
@@ -141,24 +139,20 @@ Configure Environment:
 Example Queries:
 
 > Sales Analytics
-
 * Show total sales by customer
 * Revenue by region
 * Sales over time
   
 > Customer Analytics:
-
 * Customer-wise order counts
 * Which customer spent the most?
   
 > Product Analytics:
-
 * Top selling products
 * Best selling product
 * Low stock products
   
 > Order Analytics example:
-
 * Count total orders
 * Show average order amount
   
@@ -171,20 +165,17 @@ Security Features:
    * ALTER
    * TRUNCATE
    * INSERT
-
 2.Read-only analytics
 3.Safe query execution
 4.Result limits
 
 Future Enhancements:
-
 - Team Collaboration
 - Scheduled Reports
 - Multi-Tenant Workspaces
 - Natural Language Dashboard Creation
   
 Project Highlights:
-
 ✔ Natural Language to SQL
 ✔ PostgreSQL Analytics Engine
 ✔ Interactive Visualizations
