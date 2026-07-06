@@ -322,5 +322,3 @@ Add screenshots here to showcase:
 **Hima Bindu**
 
 AI SQL Copilot — A modern AI-powered Business Intelligence platform built with **Next.js**, **TypeScript**, **PostgreSQL**, **React**, and **AI**.
-
-If you found this project useful, consider giving it a ⭐ on GitHub!
