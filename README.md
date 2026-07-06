@@ -1,192 +1,326 @@
-~~~ AI SQL Copilot
-Ask Questions in Plain English. Get SQL, Charts, and Business Insights Instantly.
-Transform natural language into SQL queries, execute them securely on PostgreSQL, visualize results, and generate AI-powered insights — all from a modern analytics dashboard.
+# 🚀 AI SQL Copilot
 
-Features:
-1. Natural Language to SQL
-   > Ask questions like:
-   > Show total sales by customer
-   > Revenue by region
-   > Top selling products
-   > Low stock products
-   > Sales over time
-   > Customer-wise order counts
-2.Automatically generates optimized SQL queries.
-3.Secure SQL Execution
-   - Read-only query execution
-   - Blocks dangerous SQL commands
-   - Automatic result limiting
-   - PostgreSQL integration
-4.Interactive Data Visualization
-5.Generate charts automatically from query results.
-  Supported:
-  - 📈 Line Charts
-  - 📊 Bar Charts
-  - 🥧 Pie Charts
-  - 🔵 Scatter Plots
- Chart Builder:
- Customize visualizations:
- - Select chart type
- - Choose X-axis
- - Choose Y-axis
- - Instantly update charts
+**AI SQL Copilot** is an AI-powered Business Intelligence platform that transforms **natural language questions into SQL queries**, executes them securely on **PostgreSQL**, visualizes the results with interactive charts, and generates meaningful business insights—all from a modern analytics dashboard.
 
-6.Editable SQL Workspace
-  - View generated SQL
-  - Edit queries manually
-  - Re-run SQL instantly
-  - Experiment like professional BI tools
+Designed for analysts, managers, and business users, the platform makes data exploration simple without requiring SQL expertise.
 
-7.AI Business Insights
-Automatically generates narrative summaries such as:
-* Revenue peaked at ₹151,200 in the South region.
+---
 
-* South contributes nearly 70% of total revenue,
-  making it the strongest-performing region.
+# ✨ Features
 
-8.Query History
-  Automatically saves recent queries.
-  - Reopen previous analyses
-  - Load SQL instantly
-  - Persistent local storage
+## 🤖 Natural Language to SQL
 
-9.CSV Export
-  Download query results with one click.
-  Perfect for Excel and reporting workflows.
+Ask questions in plain English, such as:
 
-10.Dashboard Widgets
-  Pin important analyses to your dashboard.
-  Examples:
-- Revenue Overview
-- Top Customers
-- Product Performance
-- Inventory Monitoring
+* Show total sales by customer
+* Revenue by region
+* Top selling products
+* Low stock products
+* Sales over time
+* Customer-wise order counts
+* Which customer spent the most?
 
-11.Query Sharing
-  Generate shareable links for dashboards and analyses.
+The AI automatically generates optimized SQL queries for PostgreSQL.
 
-12.Workspace Mode
-   Choose your role:
-* Analyst Workspace has access to:
-- SQL Editor
-- Raw Data
-- Charts
-- Query Execution
+---
 
-* Executive Workspace has access to:
-- Dashboards
-- Charts
-- Insights
+## 🔒 Secure SQL Execution
 
+Security is built into the query engine.
 
-System Architecture:
-┌────────────────────┐
-│ User Question      │
-└─────────┬──────────┘
-          │
-          ▼
-┌────────────────────┐
-│ AI SQL Generator   │
-└─────────┬──────────┘
-          │
-          ▼
-┌────────────────────┐
-│ PostgreSQL Engine  │
-└─────────┬──────────┘
-          │
-          ▼
-┌────────────────────┐
-│ Query Results      │
-└─────────┬──────────┘
-          │
-          ▼
-┌────────────────────┐
-│ Charts + Insights  │
-└────────────────────┘
+* Read-only query execution
+* Blocks dangerous SQL statements
+* Automatic result limiting
+* PostgreSQL integration
 
-Tech Stack:
-A. Frontend:
-- Next.js 16
-- React
-- TypeScript
-- Tailwind CSS
-- Plotly.js
+Blocked SQL commands include:
 
-B. Backend
-- Next.js API Routes
-- PostgreSQL
-- Node.js
+* DROP
+* DELETE
+* UPDATE
+* INSERT
+* ALTER
+* TRUNCATE
 
-C. Data Layer
-- PostgreSQL
-- pg Driver
+---
 
-D. Visualization
-- React Plotly
-- Dynamic Chart Builder
+## 📊 Interactive Data Visualization
 
-Clone Repository:
-* https://github.com/Himabindu-4/ai-sql-copilot.git
-Install Dependencies:
-- npm install
-  
-Configure Environment:
-- Start Development Server
-  npm run dev  
-- Open:
-  http://localhost:3000
+Automatically visualize query results using interactive charts.
 
-Example Queries:
+Supported chart types:
 
-> Sales Analytics
+* 📈 Line Chart
+* 📊 Bar Chart
+* 🥧 Pie Chart
+* 🔵 Scatter Plot
+
+### Chart Builder
+
+Customize visualizations by selecting:
+
+* Chart type
+* X-axis
+* Y-axis
+
+Charts update instantly based on your selections.
+
+---
+
+## 💻 Editable SQL Workspace
+
+Power users can inspect and modify generated SQL.
+
+Features include:
+
+* View AI-generated SQL
+* Edit queries manually
+* Execute modified queries
+* Experiment like professional BI tools
+
+---
+
+## 🧠 AI Business Insights
+
+Automatically generate human-readable summaries from query results.
+
+Example insights:
+
+> Revenue peaked at ₹151,200 in the South region.
+
+> South contributes nearly 70% of total revenue, making it the strongest-performing region.
+
+---
+
+## 🕒 Query History
+
+Never lose previous analyses.
+
+* Automatically saves recent queries
+* Reload previous SQL instantly
+* Persistent local storage
+
+---
+
+## 📄 CSV Export
+
+Export query results with a single click.
+
+Perfect for:
+
+* Excel
+* Reports
+* Data sharing
+
+---
+
+## 📌 Dashboard Widgets
+
+Pin frequently used analyses to your dashboard.
+
+Examples:
+
+* Revenue Overview
+* Top Customers
+* Product Performance
+* Inventory Monitoring
+
+---
+
+## 🔗 Query Sharing
+
+Generate shareable links for dashboards and saved analyses.
+
+---
+
+## 👥 Workspace Modes
+
+### Analyst Workspace
+
+Includes:
+
+* SQL Editor
+* Raw Data
+* Query Execution
+* Interactive Charts
+
+### Executive Workspace
+
+Focused on business users with:
+
+* Dashboards
+* Charts
+* AI Insights
+
+---
+
+# 🏗️ System Architecture
+
+```text
+User Question
+       │
+       ▼
+AI SQL Generator
+       │
+       ▼
+PostgreSQL Database
+       │
+       ▼
+Query Results
+       │
+       ▼
+Charts + AI Business Insights
+```
+
+---
+
+# 🛠️ Tech Stack
+
+## Frontend
+
+* Next.js 16
+* React
+* TypeScript
+* Tailwind CSS
+* Plotly.js
+
+## Backend
+
+* Next.js API Routes
+* Node.js
+
+## Database
+
+* PostgreSQL
+* pg Driver
+
+## Visualization
+
+* React Plotly
+* Dynamic Chart Builder
+
+---
+
+# 📂 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Himabindu-4/ai-sql-copilot.git
+```
+
+Move into the project directory:
+
+```bash
+cd ai-sql-copilot
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Configure your environment variables.
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open your browser:
+
+```text
+http://localhost:3000
+```
+
+---
+
+# 💡 Example Queries
+
+## Sales Analytics
+
 * Show total sales by customer
 * Revenue by region
 * Sales over time
-  
-> Customer Analytics:
+
+## Customer Analytics
+
 * Customer-wise order counts
 * Which customer spent the most?
-  
-> Product Analytics:
+
+## Product Analytics
+
 * Top selling products
 * Best selling product
 * Low stock products
-  
-> Order Analytics example:
+
+## Order Analytics
+
 * Count total orders
 * Show average order amount
-  
-Security Features:
 
-1. Blocks
-   * DROP
-   * DELETE
-   * UPDATE
-   * ALTER
-   * TRUNCATE
-   * INSERT
-2.Read-only analytics
-3.Safe query execution
-4.Result limits
+---
 
-Future Enhancements:
-- Team Collaboration
-- Scheduled Reports
-- Multi-Tenant Workspaces
-- Natural Language Dashboard Creation
-  
-Project Highlights:
-✔ Natural Language to SQL
-✔ PostgreSQL Analytics Engine
-✔ Interactive Visualizations
-✔ AI Generated Insights
-✔ Dashboard Widgets
-✔ CSV Export
-✔ Query History
-✔ Role-Based Workspace
-✔ Modern Enterprise UI
+# 🔐 Security
 
-Author:
-Hima bindu
-AI SQL Copilot — Modern AI-Powered Business Intelligence Platform
-Built with using Next.js, PostgreSQL, TypeScript, and AI.
+The application is designed for analytics workloads only.
+
+✅ Read-only SQL execution
+
+✅ SQL validation
+
+✅ Dangerous commands blocked
+
+✅ Automatic result limiting
+
+---
+
+# 🚀 Future Enhancements
+
+* Team Collaboration
+* Scheduled Reports
+* Multi-Tenant Workspaces
+* AI Dashboard Generation
+* Saved Dashboard Templates
+* User Authentication & Authorization
+* Database Connection Manager
+* Support for MySQL, SQL Server, and SQLite
+
+---
+
+# 📸 Screenshots
+
+Add screenshots here to showcase:
+
+* Dashboard
+* SQL Editor
+* Charts
+* AI Insights
+* Workspace Modes
+
+---
+
+# 🌟 Project Highlights
+
+* 🤖 Natural Language → SQL
+* 📊 Interactive Visualizations
+* 🧠 AI-Generated Business Insights
+* 🔒 Secure Read-Only Query Execution
+* 📌 Dashboard Widgets
+* 📄 CSV Export
+* 🕒 Query History
+* 👥 Role-Based Workspaces
+* ⚡ Modern Enterprise UI
+* 🐘 PostgreSQL Analytics
+
+---
+
+# 👩‍💻 Author
+
+**Hima Bindu**
+
+AI SQL Copilot — A modern AI-powered Business Intelligence platform built with **Next.js**, **TypeScript**, **PostgreSQL**, **React**, and **AI**.
+
+If you found this project useful, consider giving it a ⭐ on GitHub!
